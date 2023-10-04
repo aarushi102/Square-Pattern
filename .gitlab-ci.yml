@@ -3,6 +3,9 @@ stages:
   - test
   - deploy
 
+variables :
+  - CI_EXTERNAL_PULL_REQUEST_
+  
 build_job:
   stage : build
   script :
